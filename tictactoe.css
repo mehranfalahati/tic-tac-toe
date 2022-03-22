@@ -43,4 +43,6 @@ button {
 .reset {
     border-radius: 0.5em;
     width: 90px;
+    box-shadow: 2em;
+    background-color: aliceblue;
 }
