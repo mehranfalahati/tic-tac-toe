@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="tictactoe.css">    
+    <link rel="stylesheet" href="tictactoe.css">
+    <audio id="" src=""></audio>
 </head>
 
 <body>
     <header>
-       <h1>TIC TAC TOE</h1>
+       <h1>
+           
+       </h1>
     </header>
 
     <main>
@@ -18,28 +21,39 @@
         
         <nav>
 
-            <button id="box0"></button>
-            <button id="box1"></button>
-            <button id="box2"></button><br>
-            <button id="box3"></button>
-            <button id="box4"></button>
-            <button id="box5"></button><br>
-            <button id="box6"></button>
-            <button id="box7"></button>
-            <button id="box8"></button>
+            <button class="game" id="box1"></button>
+            <button class="game" id="box2"></button>
+            <button class="game" id="box3"></button><br>
+            <button class="game" id="box4"></button>
+            <button class="game" id="box5"></button>
+            <button class="game" id="box6"></button><br>
+            <button class="game" id="box7"></button>
+            <button class="game" id="box8"></button>
+            <button class="game" id="box9"></button>
 
             <p id="print"></p>
 
             <br>
 
-            <button class="reset">RESET</button>
+            <!-- <button class="reset">RESET</button> -->
         </nav>
         
 
     </main>
 
+    <aside>
+        <p id="counter1">PLAYER 1: </p>
+        <p id="counter2">PLAYER 2: </p>
+    </aside>
+
     <footer>
         <p id="winner"></p>
+
+        <div id="modalBox">
+            <!-- <button class="resetModal">PLAY AGAIN</button> -->
+            <button class="reset">PLAY AGAIN</button>
+            <p id="popup"></p>
+        </div>
 
     </footer>
     <script src="js/jquery.js"></script>
