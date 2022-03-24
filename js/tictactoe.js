@@ -41,10 +41,6 @@ $('.reset').on('click', function(){
 })
 
 
-//$('.reset').on('click', resetBoard);
-
-
-
 const winning = function () {
     //console.log(array)
         if (winningArray[0] !== "" &&  winningArray[0] ===  winningArray[1] && winningArray[1] === winningArray[2]) {
@@ -93,87 +89,3 @@ const pop = function (PLAYERWIN) {
         $('#popup').text('IT IS TIE')
     }
 }
-
-
-
-
-
-// const winning = function () {
-//     if ($('#box1').hasClass('blue') && $('#box2').hasClass('blue') && $('#box3').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } else if ($('#box1').hasClass('blue') && $('#box5').hasClass('blue') && $('#box9').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } else if ($('#box1').hasClass('blue') && $('#box4').hasClass('blue') && $('#box7').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } else if ($('#box2').hasClass('blue') && $('#box5').hasClass('blue') && $('#box8').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } else if ($('#box3').hasClass('blue') && $('#box5').hasClass('blue') && $('#box7').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } else if ($('#box3').hasClass('blue') && $('#box6').hasClass('blue') && $('#box9').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } else if ($('#box6').hasClass('blue') && $('#box5').hasClass('blue') && $('#box4').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } else if ($('#box9').hasClass('blue') && $('#box8').hasClass('blue') && $('#box7').hasClass('blue')) {
-//         $('#winner').text('PLAYER 2 WON')
-//         return true;
-
-//     } 
-
-//     if ($('#box1').hasClass('yellow') && $('#box2').hasClass('yellow') && $('#box3').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-
-//     } else if ($('#box1').hasClass('yellow') && $('#box5').hasClass('yellow') && $('#box9').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-
-//     } else if ($('#box1').hasClass('yellow') && $('#box4').hasClass('yellow') && $('#box7').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-
-//     } else if ($('#box1').hasClass('yellow') && $('#box5').hasClass('yellow') && $('#box8').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-
-//     } else if ($('#box3').hasClass('yellow') && $('#box5').hasClass('yellow') && $('#box7').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-
-//     } else if ($('#box3').hasClass('yellow') && $('#box6').hasClass('yellow') && $('#box9').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-
-//     } else if ($('#box6').hasClass('yellow') && $('#box5').hasClass('yellow') && $('#box4').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-
-//     } else if ($('#box9').hasClass('yellow') && $('#box8').hasClass('yellow') && $('#box7').hasClass('yellow')) {
-//         $('#winner').text('PLAYER 1 WON')
-//         return true;
-//     } else if (($('#box1').hasClass('blue') || $('#box1').hasClass('yellow')) && 
-//         ($('#box2').hasClass('blue') || $('#box2').hasClass('yellow')) && 
-//         ($('#box3').hasClass('blue') || $('#box3').hasClass('yellow')) && 
-//         ($('#box4').hasClass('blue') || $('#box4').hasClass('yellow')) && 
-//         ($('#box5').hasClass('blue') || $('#box5').hasClass('yellow')) && 
-//         ($('#box6').hasClass('blue') || $('#box6').hasClass('yellow')) && 
-//         ($('#box7').hasClass('blue') || $('#box7').hasClass('yellow')) && 
-//         ($('#box8').hasClass('blue') || $('#box8').hasClass('yellow')) && 
-//         ($('#box9').hasClass('blue') || $('#box9').hasClass('yellow'))) {
-//             $('#winner').text('GAME IS TIE')
-
-//         }
-// }
