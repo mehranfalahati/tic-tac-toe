@@ -3,10 +3,11 @@ let winningArray = ['', '', '', '', '', '', '', '', ''];
 let counter = 0;
 let counterPlayer1 = 0;
 let counterPlayer2 = 0;
+let winNoise = new Audio("./audio/winner.wav");
+let clickNoise = new Audio("./audio/click.wav")
 
- 
 $('.game').on('click', function(){
-    
+    clickNoise.play()
     if(turn) {
         $('#turn').text('PLAYER 2 STARTS')
         $(this).addClass('yellow');
@@ -19,14 +20,10 @@ $('.game').on('click', function(){
         $(this).prop('disabled', true)
         winningArray[$('.game').index(this)] = 'x'
         counter ++
-
     }
     winning();
     turn = !turn
-    
 })
-
-
 
 $('.reset').on('click', function(){
     $('#modalBox').css('visibility', 'hidden')
@@ -38,11 +35,10 @@ $('.reset').on('click', function(){
     }
     counter = 0
     turn = true;
+    clickNoise.play()
 })
 
-
 const winning = function () {
-    //console.log(array)
         if (winningArray[0] !== "" &&  winningArray[0] ===  winningArray[1] && winningArray[1] === winningArray[2]) {
             // $('#winner').text('PLAYER 1 WON')
             convertWinner(winningArray[0])
@@ -80,11 +76,11 @@ const convertWinner = function (playerName) {
     }
 }
 
-
 const pop = function (PLAYERWIN) {
     if (PLAYERWIN.includes('Player')) {
     $('#modalBox').css('visibility', 'visible')
     $('#popup').text(PLAYERWIN + ' WINS')
+    winNoise.play()
     } else {
         $('#popup').text('IT IS TIE')
     }
